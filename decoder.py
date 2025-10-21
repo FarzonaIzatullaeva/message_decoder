@@ -2,6 +2,8 @@ import string
 
 letters = string.ascii_lowercase
 
+# Author: Farzonakhon Izatullaeva
+
 
 def decoder(word, command):
     new_word = ""
