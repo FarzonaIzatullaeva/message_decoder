@@ -1,0 +1,11 @@
+Flask basics
+- flask is a python framework that alows me to create a web server that can serve HTML pages and handle used input.
+
+key concepts:
+1. routes - define different urls for your website
+    @app.route("/")
+    def home():
+        return "Hello world!"
+2. templates - HTML files that Flask can render dynamically
+3. Static Files - Css, JS, and images used by your templetes
+4. Forms and Requests - How flask handles data and submitted from your front-end

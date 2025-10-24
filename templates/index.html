@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder</title>
+
+</head>
+
+<body>
+    <form action="/process" method="POST">
+        <input type="text" name="message" placeholder="Enter message" id="input_box">
+        <select name="mode">
+            <option value="1">Encode</option>
+            <option value="2">Decode</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if output %}
+    <h2>Result: {{ output }}</h2>
+    {% endif %}
+
+</body>
+
+</html>
