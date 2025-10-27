@@ -1,0 +1,111 @@
+* {
+    font-family: sans-serif;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+#input_box {
+    width: 300px;
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 46px;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+
+    :focus {
+        outline: none;
+        box-shadow: none;
+        border-color: rgb(100, 153, 255);
+    }
+}
+
+.radio_group {
+    margin-top: 20px;
+    width: 100px;
+}
+
+#label1 {
+    background-color: rgba(171, 132, 239, 0.879);
+    display: block;
+    margin-top: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 5px;
+
+}
+
+#label2 {
+    background-color: rgba(171, 132, 239, 0.879);
+    display: block;
+    margin-top: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.form-control {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+input[type="radio"] {
+    accent-color: rgb(144, 0, 255);
+}
+
+#submit_button {
+    margin-top: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    padding: 10px;
+    width: 325px;
+    font-weight: bold;
+}
+
+#submit_button:hover {
+    background-color: rgb(166, 167, 168);
+}
+
+.mode_text {
+    color: rgb(241, 243, 244);
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    position: relative;
+    top: -300px;
+    right: 8px;
+}
+
+#actual_output {
+    color: rgb(144, 0, 255);
+    margin-left: 10px;
+    font-style: italic;
+    text-shadow: 2px 2px rgb(186, 186, 230);
+}
+
+#all_elements {
+    background-color: rgb(214, 219, 233);
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+}

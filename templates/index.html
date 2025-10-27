@@ -6,21 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decoder</title>
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <body>
-    <form action="/process" method="POST">
-        <input type="text" name="message" placeholder="Enter message" id="input_box">
-        <select name="mode">
-            <option value="1">Encode</option>
-            <option value="2">Decode</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
+    <div id="all_elements">
+        <div id="box">
+            <form action="/process" method="POST">
+                <input type="text" name="message" placeholder="Enter message" id="input_box">
 
-    {% if output %}
-    <h2>Result: {{ output }}</h2>
-    {% endif %}
+                <div class="radio_group">
+                    <label id="label1" class="form_control">
+                        <input type="radio" name="mode" value="1" checked>
+                        <span class="mode_text">Encocde</span>
+                    </label>
+
+                    <label id="label2" class="form_control">
+                        <input type="radio" name="mode" value="2">
+                        <span class="mode_text">Decode</span>
+                    </label>
+                </div>
+
+                <button type="submit" id="submit_button">Submit</button>
+            </form>
+        </div>
+
+        {% if output %}
+        <h2 id="result">Result: <span id="actual_output"> {{ output }}</span></h2>
+        {% endif %}
+    </div>
 
 </body>
 
